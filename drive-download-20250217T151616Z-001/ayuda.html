@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda - Mundo Lexical</title>
+    <link rel="stylesheet" href="ayuda.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(fondo-dia-mundial-libro-dibujado-mano_23-2149301165.avif);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ae9cff;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .logo-container img {
+            width: 150px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #8f78f8;
+        }
+
+        ol,
+        ul {
+            margin-left: 20px;
+        }
+
+        .toggle-section {
+            cursor: pointer;
+            font-weight: bold;
+            color: #8f78f8;
+            margin-top: 10px;
+        }
+        .toggle-section  :hover{
+            color: #333;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 5px ;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .titulo {
+            text-decoration: none;
+            color: white;
+            
+        }
+        .titulo :hover{
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="titulo">
+            <h1>Ayuda - Mundo Lexical</h1>
+        </a>
+    </header>
+   
+    <main>
+         <div class="logo-container">
+        <a href="index.html">
+            <img src="WhatsApp Image 2025-01-30 at 10.25.41 AM.jpeg" alt="Logo de Mundo Lexical">
+        </a>
+    </div>
+        <section>
+            <h2>¿Qué es Mundo Lexical?</h2>
+            <p>Mundo Lexical es una aplicación web que permite buscar el significado de palabras de manera rápida y
+                sencilla. También ofrece pronunciaciones y sinónimos para mejorar tu experiencia lingüística.</p>
+        </section>
+        <section>
+            <h2>Cómo usar la página</h2>
+            <ol>
+                <li>En la barra de navegación, puedes acceder a las secciones que hablan por si solas y nos ayudan a mejorar nuestras funcionalidades tales como  "Sobre Nosotros",
+                    "Ayuda" y "Contactos".</li>
+                <li>Para buscar el significado de una palabra, escribe en el campo de búsqueda y presiona el botón
+                    "Buscar".</li>
+                <li>Los resultados aparecerán en la sección de resultados debajo del buscador.</li>
+                <li>Haz clic en el icono de audio para escuchar la pronunciación de la palabra.</li>
+            </ol>
+        </section>
+        <section>
+            <h2 class="toggle-section" onclick="toggleSection('features')">Funciones principales ▼</h2>
+            <ul id="features" class="hidden">
+                <li><strong>Búsqueda de palabras:</strong> Encuentra definiciones fácilmente.</li>
+                <li><strong>Menú de navegación:</strong> Accede a distintas secciones de la página.</li>
+                <li><strong>Audio:</strong> Escucha la pronunciación de la palabra buscada.</li>
+                <li><strong>Sinónimos y ejemplos:</strong> Obtén palabras relacionadas y ejemplos de uso.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <p>Si necesitas más ayuda, visita la sección "Contactos" en la barra de navegación.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mundo Lexical. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>

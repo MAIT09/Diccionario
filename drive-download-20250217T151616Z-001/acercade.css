@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(fondo-dia-mundial-libro-dibujado-mano_23-2149301165.avif);
+    margin: 0;
+    padding: 0;
+   
+  
+}
+
+/* Estilo del encabezado y la barra de navegación */
+header {
+    background-size: cover;
+    width: 100%;
+    background-color:  #ae9cff;
+    color: white;
+    text-align: center;
+    padding: 1em;
+   
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.home-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.home-icon:hover {
+    color: #ae9cff;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: white;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Estilos de la imagen del logo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Estilos del título */
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Estilos del texto */
+p {
+    color: #0a0a0a;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.titulo{
+    color: white;
+   
+}
+a{
+    text-decoration: none;
+}

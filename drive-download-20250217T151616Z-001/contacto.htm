@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mundo Lexical</title>
+    <link rel="stylesheet" href="contacto.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(fondo-dia-mundial-libro-dibujado-mano_23-2149301165.avif);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:#ae9cff ;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo-container {
+            
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .logo-container a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .logo-container img {
+            width: 120px;
+        }
+        .contact-container {
+            max-width: 500px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact-container h2 {
+            color: #333;
+        }
+        .contact-container p {
+            color: #555;
+        }
+        .contact-item {
+            margin: 15px 0;
+        }
+        .contact-item a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .contact-item img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        .contact-item a:hover {
+            color: white;
+            background-color: #ae9cff;
+        }
+        .qr-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .qr-container img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 5px ;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>Contacto</header>
+   
+    <div class="contact-container">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="WhatsApp Image 2025-01-30 at 10.25.41 AM.jpeg" alt="Logo de Mundo Lexical">
+            </a>
+        </div>
+        <h2>¡Hablemos!</h2>
+        <p>Si tienes dudas o sugerencias, contáctanos a través de nuestras redes sociales.</p>
+        
+        <div class="contact-item">
+            <a href="https://wa.me/8096194274" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp"> WhatsApp
+            </a>
+        </div>
+        
+        <div class="contact-item">
+            <a href="https://www.instagram.com/ivo_la_compota/" target="_blank">
+                <img src="instagram.png" alt="Instagram"> Instagram
+            </a>
+        </div>
+        
+        <div class="qr-container">
+            <h3>Escanea para seguirnos en Instagram</h3>
+            <img src="ivo_la_compota_qr.png" alt="QR de Instagram">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Mundo Lexical. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".contact-item a").forEach(item => {
+                item.addEventListener("mouseover", () => {
+                    item.style.backgroundColor = "#333";
+                });
+                item.addEventListener("mouseout", () => {
+                    item.style.backgroundColor = "#ae9cff";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
